@@ -1,1 +1,1 @@
-dot files of Linux
+dot files of my Linux system
