@@ -1,0 +1,10 @@
+*.cpp
+*.py
+*.pyc
+*.c
+a.out
+*.o
+*/
+*.zip
+*.log
+.*

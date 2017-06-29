@@ -1,0 +1,8 @@
+[user]
+	name = Atul Kumar
+	email = atulkumartata@gmail.com
+[core]
+	editor = vim
+	excludesFile = /home/atul/.gitignore
+[color]
+	ui = true
