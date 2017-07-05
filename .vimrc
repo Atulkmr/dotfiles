@@ -12,7 +12,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'honza/vim-snippets'
 Plug 'Rip-Rip/clang_complete'
 Plug 'kien/ctrlp.vim'
-Plug 'scrooloose/nerdcommenter'
+Plug 'jiangmiao/auto-pairs'
 Plug 'altercation/vim-colors-solarized'
 Plug 'nvie/vim-flake8'
 call plug#end()
@@ -59,7 +59,7 @@ nnoremap pp "+P
 nnoremap qq <Esc>:q<CR>
 "to write the buffer to the file
 nnoremap <C-s> <Esc>:w<CR>
-inoremap <C-s> <Esc>:w<CR><Right>i
+inoremap <C-s> <Esc>:w<CR><Right>
 "move to next buffer
 nnoremap <C-j> :bn<CR>
 "move to previous buffer
