@@ -139,3 +139,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 if [ -f $HOME/.cxl_config ]; then
     . $HOME/.cxl_config
 fi
+
+export PYTHONSTARTUP=~/.pythonrc
