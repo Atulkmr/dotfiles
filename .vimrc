@@ -28,6 +28,7 @@ set hlsearch
 set mouse=a
 filetype plugin indent on
 syntax enable 
+set backspace=indent,eol,start
 set wrap 		" enable word wrap
 set showmatch mat=5  " blink match parenthesis, blink match time
 set so=12 		" avoid cursor getting to extreme bottom
