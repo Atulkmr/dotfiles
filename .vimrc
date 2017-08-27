@@ -44,7 +44,7 @@ set tm=400  			" time waited for special sequences in ms
 set encoding=utf-8
 set ruler cursorline
 set synmaxcol=120       	"prevents syntax highlighting for long lines (performance)
-
+autocmd BufNewFile *.cpp -r ~/.template.cpp  "Open new cpp file with the given template
 set background=dark
 colorscheme solarized
 " This makes vim act like all other editors, buffers can
@@ -115,6 +115,7 @@ vnoremap cc "+y
 "paste the yanked lines
 nnoremap pp "+P
 "to quit vim
+noremap <C-n> <Esc>:enew<CR>
 nnoremap qq <Esc>:q!<CR>
 "to write the buffer to the file
 nnoremap <C-s> <Esc>:w<CR>
@@ -126,7 +127,7 @@ nnoremap <C-k> :bprev<Cr>
 "toggle search highlighting
 noremap <F2> :set hlsearch!<CR>
 
-"========================== git-gutter =====================================
+"========================== git-gutter ======================================
 set updatetime=250
 "=========================== Auto-Pairs =====================================
 let g:AutoPairsMapCR = 0
