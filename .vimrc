@@ -126,6 +126,8 @@ nnoremap <C-k> :bprev<Cr>
 "toggle search highlighting
 noremap <F2> :set hlsearch!<CR>
 
+"========================== git-gutter =====================================
+set updatetime=250
 "=========================== Auto-Pairs =====================================
 let g:AutoPairsMapCR = 0
 imap <silent><CR> <CR><Plug>AutoPairsReturn
