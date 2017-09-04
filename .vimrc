@@ -6,7 +6,7 @@ Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
 Plug 'scrooloose/nerdtree'
 Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tcomment_vim'
+Plug 'scrooloose/nerdcommenter'
 Plug 'SirVer/ultisnips'
 Plug 'ervandew/supertab'
 Plug 'vim-airline/vim-airline'
@@ -32,11 +32,11 @@ set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
-set pastetoggle=<F3> 			
+set pastetoggle=<F3>
 set hlsearch
-set mouse=a
+" set mouse=a
 set undolevels=1000 		" Number of undo levels
-syntax enable 
+syntax enable
 set backspace=indent,eol,start
 set showmatch mat=5  		" blink match parenthesis, blink match time
 set so=12 						" avoid cursor getting to extreme bottom
@@ -69,14 +69,17 @@ set nowb
 
 " ================ Indentation ======================
 
-set autoindent
 set cindent
 set smartindent
 set smarttab
-set shiftwidth=4
+set tabstop=4
 set softtabstop=4
-set tabstop=8
+set shiftwidth=4
+set textwidth=79
 set expandtab
+set autoindent
+set fileformat=unix
+
 
 filetype plugin on
 filetype indent on
@@ -111,7 +114,7 @@ nnoremap <leader><leader> i
 "Ctrl+n to open a new buffer in current window
 nnoremap yy gg"+yG
 "Yank visually selected lines
-vnoremap cc "+y
+vnoremap yy "+y
 "paste the yanked lines
 nnoremap pp "+P
 "to quit vim
@@ -143,11 +146,20 @@ let g:syntastic_auto_loc_list=1
 "don't care about warnings
 let g:syntastic_quiet_messages = {'level': 'warnings'}
 
-"========================= Tcommnet-config ======================
-inoremap gcc <Esc>gcc i
+"========================= NERDcomment-config ======================
+let g:NERDSpaceDelims = 1               " Add spaces after comment delimiters by default
+let g:NERDCompactSexyComs = 1           " Use compact syntax for prettified multi-line comments
+let g:NERDDefaultAlign = 'left'         " Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDCommentEmptyLines = 1         " Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDTrimTrailingWhitespace = 1    " Enable trimming of trailing whitespace when uncommenting
+let g:NERDCreateDefaultMappings = 0     " disable default mappings for NERDcomment
+
+inoremap cc <C-o>:call NERDComment(0,"toggle")<CR>
+nnoremap cc :call NERDComment(0,"toggle")<CR>
+vnoremap cc :call NERDComment(0,"toggle")<CR>
 
 "========================== CTRLP-CONFIG =======================
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<c-p>' 
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
 
