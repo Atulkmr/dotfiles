@@ -122,6 +122,7 @@ fi
 
 alias a="./a.out"
 alias g++="g++ -std=c++11"
+alias python="python3"
 export PATH=$PATH:~/bin
 export PATH=$PATH:/usr/local/bin/pycharm-community-2017.1.2/bin
 stty -ixon # This disables XON/XOFF so Ctrl-s and Ctrl-q mappings are free
