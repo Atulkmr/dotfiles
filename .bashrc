@@ -120,13 +120,13 @@ if [ -f ~/.git-completion.bash ]; then
 	source ~/.git-completion.bash
 fi
 
+export PATH=$PATH:~/bin
+
 alias a="./a.out"
 alias g++="g++ -std=c++11"
 
 alias activate="source activate"
 alias deactivate="source deactivate"
-export PATH=$PATH:~/bin
-stty -ixon # This disables XON/XOFF so Ctrl-s and Ctrl-q mappings are free
 
 alias gadd="git add"
 alias gstat="git status"
@@ -136,3 +136,5 @@ alias gpush="git push -u origin"
 alias gpull="git pull origin"
 
 export PYTHONSTARTUP=~/.pythonrc
+
+stty -ixon # This disables XON/XOFF so Ctrl-s and Ctrl-q mappings are free
