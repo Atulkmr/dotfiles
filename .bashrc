@@ -122,9 +122,10 @@ fi
 
 alias a="./a.out"
 alias g++="g++ -std=c++11"
-alias python="python3"
+
+alias activate="source activate"
+alias deactivate="source deactivate"
 export PATH=$PATH:~/bin
-export PATH=$PATH:/usr/local/bin/pycharm-community-2017.1.2/bin
 stty -ixon # This disables XON/XOFF so Ctrl-s and Ctrl-q mappings are free
 
 alias gadd="git add"
@@ -133,8 +134,5 @@ alias gcomm="git commit"
 alias gdiff="git diff"
 alias gpush="git push -u origin"
 alias gpull="git pull origin"
-
-export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
 
 export PYTHONSTARTUP=~/.pythonrc
