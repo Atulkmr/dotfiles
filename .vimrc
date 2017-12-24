@@ -154,7 +154,6 @@ let g:NERDCommentEmptyLines = 1         " Allow commenting and inverting empty l
 let g:NERDTrimTrailingWhitespace = 1    " Enable trimming of trailing whitespace when uncommenting
 let g:NERDCreateDefaultMappings = 0     " disable default mappings for NERDcomment
 
-inoremap cc <C-o>:call NERDComment(0,"toggle")<CR>
 nnoremap cc :call NERDComment(0,"toggle")<CR>
 vnoremap cc :call NERDComment(0,"toggle")<CR>
 
@@ -162,6 +161,7 @@ vnoremap cc :call NERDComment(0,"toggle")<CR>
 let g:ctrlp_map = '<c-p>' 
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_use_caching = 0
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
