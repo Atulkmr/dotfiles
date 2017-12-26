@@ -32,6 +32,8 @@ set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
+set foldcolumn=4                "Leaves 4 columns blank for denoting fold boundaries and status.
+set foldmethod=indent           "using indentation to create folds for all filetypes
 set pastetoggle=<F3>
 set hlsearch
 " set mouse=a
