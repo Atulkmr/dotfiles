@@ -71,14 +71,14 @@ set nowb
 
 " ================ Indentation ======================
 
-set cindent
+" set cindent
 set smartindent
 set smarttab
-set tabstop=4
+set tabstop=8
 set softtabstop=4
 set shiftwidth=4
-set textwidth=79
-set expandtab
+set textwidth=120
+" set expandtab
 set autoindent
 set fileformat=unix
 
