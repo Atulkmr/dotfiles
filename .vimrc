@@ -17,7 +17,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'nvie/vim-flake8'
-
+Plug 'Valloric/MatchTagAlways'
 call plug#end()
 
 set nocompatible
