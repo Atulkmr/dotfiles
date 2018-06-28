@@ -4,3 +4,4 @@ fi
 
 # added by Miniconda3 installer
 export PATH="/usr/local/bin/miniconda3/bin:$PATH"
+export CLICOLOR=1
