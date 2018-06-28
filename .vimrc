@@ -18,6 +18,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'nvie/vim-flake8'
 Plug 'Valloric/MatchTagAlways'
+Plug 'kshenoy/vim-signature'
 call plug#end()
 
 set nocompatible
@@ -37,6 +38,7 @@ set foldmethod=indent           "using indentation to create folds for all filet
 set foldlevel=1			"folds will be created for shiftwidth>=1
 set pastetoggle=<F3>
 set hlsearch
+set iskeyword&			" enables word and WORD command differentiation 
 " set mouse=a
 set undolevels=1000 		" Number of undo levels
 syntax enable
