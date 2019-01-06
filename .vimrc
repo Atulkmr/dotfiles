@@ -47,7 +47,7 @@ set foldlevel=1			"folds will be created for shiftwidth>=1
 set pastetoggle=<F3>
 set hlsearch
 set iskeyword&			" enables word and WORD command differentiation 
-" set mouse=a
+set mouse=a
 set undolevels=1000 		" Number of undo levels
 syntax enable
 set backspace=indent,eol,start
@@ -175,6 +175,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_use_caching = 0
+let g:ctrlp_max_files = 6000
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows

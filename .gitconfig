@@ -6,3 +6,5 @@
 	excludesFile = /home/atul/.gitignore
 [color]
 	ui = true
+[credential]
+	helper = cache --timeout=86400

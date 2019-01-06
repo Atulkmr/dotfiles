@@ -8,18 +8,19 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-# if running bash
-if [ -n "$BASH_VERSION" ]; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
-    fi
-fi
+# This disables XON/XOFF so Ctrl-s and Ctrl-q mappings are free
+stty -ixon
+
+alias a="./a.out"
+alias g++="g++ -std=c++11"
+alias gadd="git add"
+alias gstat="git status"
+alias gcomm="git commit"
+alias gdiff="git diff"
+alias gpush="git push -u origin"
+alias gpull="git pull origin"
 
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
-
-export PATH=~/bin:"$PATH"
-
-# Salesforce specific
-export P4PORT=ssl:p4proxy.hyderabad.soma.salesforce.com:1999
+export PYTHONSTARTUP=~/.pythonrc
+export PATH=$PATH:~/bin
