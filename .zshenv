@@ -4,3 +4,6 @@
 [ -d "$HOME/.local/bin" ] && PATH="$HOME/.local/bin:$PATH"
 
 export PYTHONSTARTUP=~/.pythonrc
+
+# This disables XON/XOFF so Ctrl-s and Ctrl-q mappings are free
+stty -ixon
