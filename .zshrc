@@ -99,3 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# The next line is here to use dircolors which comes as a part of
+# https://github.com/Anthony25/gnome-terminal-colors-solarized
+test -e "${HOME}/gnome-terminal-colors-solarized" && eval `dircolors ${HOME}/gnome-terminal-colors-solarized/dircolors`
