@@ -9,7 +9,7 @@
 #umask 022
 
 # This disables XON/XOFF so Ctrl-s and Ctrl-q mappings are free
-stty -ixon
+[[ $- == *i* ]] && stty -ixon
 
 alias a="./a.out"
 alias g++="g++ -std=c++11"

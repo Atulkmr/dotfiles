@@ -1,40 +1,32 @@
-#include <iostream>
-#include <sstream>
-#include <cstdio>
-#include <cmath>
-#include <cstring>
-#include <cctype>
-#include <string>
-#include <vector>
-#include <list>
-#include <set>
-#include <map>
-#include <queue>
-#include <stack>
-#include <algorithm>
-#include <functional>
+#include <bits/stdc++.h>
 
-using namespace std; 
+using namespace std;
 
-#define DEBUG(x) cout << '>' << #x << ':' << x << endl;
-#define REP(i,n) for(int i=0;i<(n);i++)
-#define FOR(i,a,b) for(int i=(a);i<=(b);i++)
-#define FORD(i,a,b) for(int i=(a);i>=(b);i--)
-
-inline bool EQ(double a, double b) { return fabs(a-b) < 1e-9; }
-const int INF = 1<<29;
 typedef long long ll;
-inline int two(int n) { return 1 << n; }
-inline int test(int n, int b) { return (n>>b)&1; }
-inline void set_bit(int & n, int b) { n |= two(b); }
-inline void unset_bit(int & n, int b) { n &= ~two(b); }
-inline int last_bit(int n) { return n & (-n); }
-inline int ones(int n) { int res = 0; while(n && ++res) n-=n&(-n); return res; }
+typedef unsigned long long ull;
+typedef pair<int,int> pii;
+typedef pair<int,pair<int,int> > tii;
+typedef vector<int> vec;
+typedef vector<long long> vecll;
+typedef vector<pair<int,int> > vec_pii;
+typedef vector<vector<int> > ugraph;
+typedef vector<vector<pair<int,int> > > wgraph;
+#define mp make_pair
+#define pb push_back
+#define mod 1000000007
+#define gcd(a,b) __gcd(a,b)
+#define sf(n) scanf("%lld",&(n))
+#define pf(n) printf("%lld\n",(n))
+#define min3(a,b,c) (min((c),min((a),(b))))
+#define max3(a,b,c) (max((a),max((b),(c))))
+#define ff first
+#define ss second
+#define mset(a,b) memset(a,b,sizeof(a));
+#define newline "\n"
+#define countsetbits(n) __builtin_popcount((n))
+#define setbit(mask,i) (mask = mask|(1<<i))
+#define checkbit(mask,i) (1&(mask>>i))
 
-template<class T> void chmax(T & a, const T & b) { a = max(a, b); }
-template<class T> void chmin(T & a, const T & b) { a = min(a, b); }
-/////////////////////////////////////////////////////////////////////
-int main()
-{
+int main() {
     return 0;
 }
