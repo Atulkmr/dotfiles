@@ -66,7 +66,13 @@ plugins=(
   git 
   zsh-syntax-highlighting
   zsh-autosuggestions
+  virtualenv
   )
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs virtualenv)
+VIRTUAL_ENV_DISABLE_PROMPT=1
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
 source $ZSH/oh-my-zsh.sh
 # User configuration
