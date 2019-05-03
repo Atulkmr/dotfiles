@@ -71,8 +71,17 @@ plugins=(
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs virtualenv)
 VIRTUAL_ENV_DISABLE_PROMPT=1
-export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+if [ -d ~/.virtualenvs ]; then
+    export WORKON_HOME=~/.virtualenvs
+fi
+
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+elif [ -f ~/.local/bin/virtualenvwrapper.sh ]; then
+    source ~/.local/bin/virtualenvwrapper.sh
+else
+    echo "virtualenvwrapper not installed."
+fi
 
 source $ZSH/oh-my-zsh.sh
 # User configuration
