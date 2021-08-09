@@ -34,6 +34,9 @@ set nocompatible
 " ================ General Config ====================
 
 set number                      "Line numbers are good
+set viminfo='100,f1		"allows 100 marks to be saved across sessions, f1 enables save for global marks
+set ignorecase                  "make / search case insensitive
+set smartcase                   "if capital letters in search term then becomes case-sensitive
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
@@ -49,7 +52,6 @@ set hlsearch
 set iskeyword&			" enables word and WORD command differentiation 
 set mouse=a
 set undolevels=1000 		" Number of undo levels
-syntax enable
 set backspace=indent,eol,start
 set showmatch mat=5  		" blink match parenthesis, blink match time
 set so=12 						" avoid cursor getting to extreme bottom
@@ -59,7 +61,7 @@ set ruler cursorline
 set synmaxcol=120       	"prevents syntax highlighting for long lines (performance)
 autocmd BufNewFile *.cpp -r ~/.template.cpp  "Open new cpp file with the given template
 set background=dark
-colorscheme solarized
+colorscheme molokai 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
 " http://items.sjbach.com/319/configuring-vim-right
